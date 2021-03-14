@@ -1,0 +1,20 @@
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin-right: 2%;
+    line-height: 30px;
+}
+
+.animate-list {
+    text-decoration: underline;
+  }
+
+.animate-list:hover {
+    transform: scale(1.2);
+    color: purple;
+    font-size: 24px;
+    transition: 0.5s;
+}
