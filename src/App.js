@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import Nav from './components/Nav'
 import About from './components/About'
+import Canvas from './components/Canvas'
 function App() {
   const [categories] = useState([
     {
@@ -36,6 +37,7 @@ function App() {
       image = { image }
       setImage = { setImage }
       ></About>
+      
     </div>
   );
 }
