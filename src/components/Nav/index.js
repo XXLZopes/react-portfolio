@@ -17,8 +17,8 @@ return(
     <header>
         <nav>
             <ul>
-                <li>
-                    Who Am I?
+                <li className="who-am-i-li">
+                    <a href="#about" className="who-am-i-a">Who Am I?</a>
                 </li>
                 {categories.map((category) => (
                     <li

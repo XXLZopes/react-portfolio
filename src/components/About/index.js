@@ -18,7 +18,7 @@ useEffect(() => {
     return(
         <section>
             <h1 id="about">Who is Aidan Meyer?</h1>
-            <img src={require(`../../assets/images/coverPhotos/${image}.jpg`).default} className="my-2" style={{width: "100%"}} alt="cover" />
+            <img src={require(`../../assets/images/coverPhotos/${image}.jpg`).default} className="my-2" style={{width: "100%", margin: "0, 200px, 0, 200px"}} alt="cover" />
         </section>
     )
 }

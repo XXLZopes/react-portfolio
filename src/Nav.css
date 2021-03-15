@@ -1,20 +1,28 @@
 ul {
     display: flex;
+    line-height: 30px;
 }
 
 li {
     list-style: none;
-    margin-right: 2%;
-    line-height: 30px;
+    margin-right: 20px;
+}
+
+.who-am-i-a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+    font-weight: bold;
 }
 
 .animate-list {
-    text-decoration: underline;
+    color: rgb(228, 228, 228);
   }
 
 .animate-list:hover {
-    transform: scale(1.2);
-    color: purple;
+    background-color: black;
+    color: white;
     font-size: 24px;
-    transition: 0.5s;
+    transition: 1.3s;
 }
