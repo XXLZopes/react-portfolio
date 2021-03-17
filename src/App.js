@@ -2,8 +2,10 @@ import React, {useState} from 'react';
 import './App.css';
 import Nav from './components/Nav'
 import About from './components/About'
-import Canvas from './components/Canvas'
+import Portfolio from './components/Portfolio'
+
 function App() {
+
   const [categories] = useState([
     {
       name: 'react',
@@ -24,6 +26,7 @@ function App() {
   ])
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
   let [image, setImage] = useState(0)
+
   
   return (
     <div className="App">
@@ -37,7 +40,7 @@ function App() {
       image = { image }
       setImage = { setImage }
       ></About>
-      
+      <Portfolio currentCategory = {currentCategory}></Portfolio>
     </div>
   );
 }

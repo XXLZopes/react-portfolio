@@ -1,0 +1,9 @@
+section {
+
+}
+
+#coverPhoto {
+    position: relative;
+    z-index: -1;
+    box-shadow: 5px 5px 12px black;
+}
