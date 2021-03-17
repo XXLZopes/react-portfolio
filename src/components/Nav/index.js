@@ -18,7 +18,7 @@ return(
         <nav>
             <ul>
                 <li className="who-am-i-li">
-                    <a href="#about" className="who-am-i-a">Who Am I?</a>
+                    <a href=".about" className="who-am-i-a">Who Am I?</a>
                 </li>
                 {categories.map((category) => (
                     <li

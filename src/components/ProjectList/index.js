@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import "./index.css"
 
 const ProjectList = ({ category }) => {
 
@@ -31,19 +32,32 @@ const ProjectList = ({ category }) => {
 
     const currentProjects = projects.filter((project) => project.category === category);
 
+    let [translate, setTranslate] = useState(window.scrollY * .5)
+    const onScroll = () => {setTranslate(window.scrollY * .5)}
+    //scroll event
+    useEffect(() => {
+        document.addEventListener('scroll', onScroll)
+        //clean up onScroll event
+        return () => {
+            document.removeEventListener('scroll', onScroll);
+        }
+    }, [] );
+    
+
+
     return (
       
-            <div className="flex-row">
+            <div className="space-between">
                 {currentProjects.map((project, i) => (
                     <a
                     href={project.link}
                     key={project.name}
                     >
-                        <img
+                        <img style={{transform: `translateY(${window.scrollY * -.5}px)`}} 
                             src={require(`../../assets/images/${category}/${i}.jpg`).default}
                             alt={project.name}
                             key={project.name}
-                            className="img-thumbnail mx-1"
+                            className="pl-img"
                         />
                     </a>
                 ))}

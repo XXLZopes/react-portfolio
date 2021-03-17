@@ -1,9 +1,13 @@
 header {
-    
+    z-index: 3;
     display: flex;
     align-items: center;
     height: 50px;
     background-color: ivory;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 2px 2px 50px black;
 }
 ul {
     display: flex;
