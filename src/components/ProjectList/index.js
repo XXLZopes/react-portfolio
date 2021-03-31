@@ -32,8 +32,8 @@ const ProjectList = ({ category }) => {
 
     const currentProjects = projects.filter((project) => project.category === category);
 
-    let [translate, setTranslate] = useState(window.scrollY * .5)
-    const onScroll = () => {setTranslate(window.scrollY * .5)}
+    let [translate, setTranslate] = useState(window.scrollY * -.5)
+    const onScroll = () => {setTranslate(window.scrollY * -.5)}
     //scroll event
     useEffect(() => {
         document.addEventListener('scroll', onScroll)
@@ -43,17 +43,17 @@ const ProjectList = ({ category }) => {
         }
     }, [] );
     
-
-
     return (
       
-            <div className="space-between">
+            <div className="img-container grid-template-columns">
                 {currentProjects.map((project, i) => (
                     <a
                     href={project.link}
                     key={project.name}
+                    target="_blank"
                     >
-                        <img style={{transform: `translateY(${window.scrollY * -.5}px)`}} 
+                        <img width="60%"
+                            style={{transform: `translateY(${translate}px)`}} 
                             src={require(`../../assets/images/${category}/${i}.jpg`).default}
                             alt={project.name}
                             key={project.name}
@@ -61,6 +61,7 @@ const ProjectList = ({ category }) => {
                         />
                     </a>
                 ))}
+                    
             </div>
     );
 };

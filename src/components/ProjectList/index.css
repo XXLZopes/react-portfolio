@@ -1,11 +1,16 @@
 .pl-img {
-    margin-top: 20px;
     border: 4px solid ivory;
     z-index: 100;
-    margin: 0 100px 0 100px;
+    box-shadow: 5px 5px 12px black;
  }
 
-.space-between {
+ .pl-img:hover {
+    border: 5px solid #90dbee;
+ }
 
+ .grid-template-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 350px);
     
-}
+ }

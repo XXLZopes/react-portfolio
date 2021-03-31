@@ -12,10 +12,7 @@ let {
 let [translate, setTranslate] = useState(window.scrollY * .5)
 const onScroll = function (e) {
     setTranslate(window.scrollY * .5)
-    // console.log(e)
-    // console.log('What translate is: ', translate)
-    // console.log(window.scrollY)
-    // console.log(`What translate should be: translateY(${window.scrollY * .5}px)`)
+    console.log(window.scrollY)
     
 }
 
@@ -38,10 +35,10 @@ useEffect(() => {
 }, [] );
 
     return(
-        <section className="about">
+        <section id="about">
+            {/* <p>{translate}</p> */}
             <img 
-            style={{transform: `translateY(${window.scrollY * .5}px)`}} 
-            // style={{transform: `translateY(${translate})px` }} 
+            style={{transform: `translateY(${translate}px)`}} 
             // ref={coverPhoto} 
             id="coverPhoto" 
             src={require(`../../assets/images/coverPhotos/${image}.jpg`).default} 

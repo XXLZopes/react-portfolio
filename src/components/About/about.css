@@ -1,4 +1,4 @@
-.about {
+#about {
     margin-top: 50px;
 }
 
@@ -18,4 +18,24 @@ z-index: 10;
 
 .fixed {
     position: fixed;
+}
+
+.shadow {
+    box-shadow: 5px 5px 12px black;
+}
+
+.space-under {
+    margin-bottom: 20px;
+}
+
+.space-over {
+    margin-top: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
 }

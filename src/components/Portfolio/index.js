@@ -22,6 +22,7 @@ function Portfolio(props) {
             <div>
                 <h1 style={{
                     transform: `translateY(${window.scrollY * -.2}px)`}} className='p-h1'>Aidan Meyer</h1>
+
                 <ProjectList category={currentCategory.name}></ProjectList>
                 
             </div>

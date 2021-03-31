@@ -8,6 +8,7 @@ header {
     top: 0;
     width: 100%;
     box-shadow: 2px 2px 50px black;
+    scroll-behavior: smooth;
 }
 ul {
     display: flex;
@@ -28,7 +29,7 @@ li {
 }
 
 .animate-list {
-    color: rgb(228, 228, 228);
+    color: rgb(199, 197, 197);
     justify-self: flex-end;
   }
 

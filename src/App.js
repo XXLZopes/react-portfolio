@@ -3,6 +3,8 @@ import './App.css';
 import Nav from './components/Nav'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
+import Contact from './components/Contact'
+import Resume from './components/Resume'
 
 function App() {
 
@@ -25,22 +27,29 @@ function App() {
     }
   ])
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [contactSelected, setContactSelected] = useState(false);
+  const [resumeSelected, setResumeSelected] = useState(false);
   let [image, setImage] = useState(0)
 
   
   return (
-    <div className="App">
+    <div className="App" data-scroll data-scroll-speed="1000000">
       <Nav
       categories = {categories}
       currentCategory={currentCategory}
       setCurrentCategory={setCurrentCategory}
+      contactSelected={contactSelected}
+      setContactSelected={setContactSelected}
+      setResumeSelected={setResumeSelected}
       >
       </Nav>
       <About
       image = { image }
       setImage = { setImage }
       ></About>
-      <Portfolio currentCategory = {currentCategory}></Portfolio>
+      {!contactSelected ? <Portfolio currentCategory = {currentCategory}></Portfolio> : <Contact></Contact>}
+      {resumeSelected ? <Resume></Resume> : ''}
+      {/* <Portfolio currentCategory = {currentCategory}></Portfolio> */}
     </div>
   );
 }
