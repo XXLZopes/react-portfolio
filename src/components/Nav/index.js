@@ -58,7 +58,7 @@ return(
                         setResumeSelected(true)
                         setTimeout(() => {
                             window.scrollBy({ top: scrollFunction(1955), left: 0, behavior: 'smooth' });
-                        }, 0);
+                        }, 10);
                     }
                     }
                     >Resume</span>
