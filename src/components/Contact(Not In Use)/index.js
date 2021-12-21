@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers'
+import { validateEmail } from '../../utils/helpers';
+import './contact.css';
 
 function ContactForm() {
 const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -35,6 +36,8 @@ else {
 function handleSubmit(e) {
     e.preventDefault();
     console.log(formState);
+
+    window.open('mailto:test@example.com?subject=subject&body=body');
 }
 
     return(

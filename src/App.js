@@ -3,27 +3,27 @@ import './App.css';
 import Nav from './components/Nav'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
-import Contact from './components/Contact'
+import Contact from './components/Contact(Not In Use)'
 import Resume from './components/Resume'
 
 function App() {
 
   const [categories] = useState([
     {
-      name: 'react',
-      description: "All my web applications that used Facebook's React."
-    },
-    {
       name: 'front-end',
       description: "All my front end web applications."
     },
-    {
-      name: 'back-end',
-      description: "Video's illustrate my backend projects"
-    },
+    // {
+    //   name: 'back-end',
+    //   description: "Video's illustrate my backend projects"
+    // },
     {
       name: 'full-stack',
       description: "All my deployed"
+    },
+    {
+      name: 'react',
+      description: "All my web applications that used Facebook's React."
     }
   ])
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -47,7 +47,7 @@ function App() {
       image = { image }
       setImage = { setImage }
       ></About>
-      {!contactSelected ? <Portfolio currentCategory = {currentCategory}></Portfolio> : <Contact></Contact>}
+      {!contactSelected ? <Portfolio currentCategory = {currentCategory}></Portfolio> : window.open('mailto:aidan1meyer1@gmail.com')}
       {resumeSelected ? <Resume></Resume> : ''}
       {/* <Portfolio currentCategory = {currentCategory}></Portfolio> */}
     </div>

@@ -4,29 +4,35 @@ import "./index.css"
 const ProjectList = ({ category }) => {
 
     const [projects] = useState([
+        {
+            name: 'Portfolio',
+            category: 'react',
+            describe: 'Aidan built this website using react.js!',
+            // link: ''
+        },
        {
            name: 'Run Buddy',
            category: 'front-end',
-           describe: 'asdlmsklmkjsfdmkjdk',
-           link: 'https://www.google.com'
+           describe: 'Aidan Meyer\'s first project at the UCLA boot camp',
+           link: 'https://xxlzopes.github.io/run-buddy/'
        },
        {
         name: 'Covid-19 Tracker',
         category: 'front-end',
-        describe: 'asdlmsklmkjsfdmdqwdwedewdewkjdk',
-        link: 'https://www.google.com'
+        describe: 'Aidan\'s first team project at the UCLA boot camp',
+        link: 'https://aidanguarniere.github.io/covid-19-tracker/'
         },
         {
-            name: '',
+            name: 'coming soon..',
             category: 'front-end',
-            describe: 'asdlmsklsdamkjsfdmkjdk',
-            link: 'https://www.google.com'
+            describe: 'What is next?',
+            // link: ''
         },
         {
             name: 'Goals Social',
             category: 'full-stack',
             describe: 'asdlmsklasdasdmkjsfdmkjdk',
-            link: 'https://www.google.com'
+            link: 'https://goals-social-network.herokuapp.com/'
         }
     ]);
 
