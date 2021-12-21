@@ -19,13 +19,12 @@ function Portfolio(props) {
 
     return (
         <section id='pg-2'>
-            <div>
+            <div className='style-div'>
                 <h1 style={{
-                    transform: `translateY(${window.scrollY * -.2}px)`}} className='p-h1'>Aidan Meyer</h1>
-
+                    transform: `translateY(${window.scrollY * -.2}px)`}} className='p-h1'>Projects</h1>
                 <ProjectList category={currentCategory.name}></ProjectList>
-                
             </div>
+            
         </section>
     )
 }

@@ -40,7 +40,7 @@ return(
                         setResumeSelected(false)
                     }
                 }
-                    >Who Am I?</a>
+                    >Aidan Meyer</a>
                 </li>
                 <li className={` mx-2 `}>
                         <span 
@@ -57,7 +57,7 @@ return(
                         setContactSelected(false)
                         setResumeSelected(true)
                         setTimeout(() => {
-                            window.scrollBy({ top: scrollFunction(1955), left: 0, behavior: 'smooth' });
+                            window.scrollBy({ top: scrollFunction(1258), left: 0, behavior: 'smooth' });
                         }, 50);
                     }
                     }
@@ -75,9 +75,9 @@ return(
                             setCurrentCategory(category)
                             setContactSelected(false)
                             setResumeSelected(false)
-                            console.log(category)
+                            // console.log(category)
                             setTimeout(() => {
-                                window.scrollBy({ top: scrollFunction(1150), left: 0, behavior: 'smooth' });
+                                window.scrollBy({ top: scrollFunction(455), left: 0, behavior: 'smooth' });
                             }, 0);
                             
                         }}

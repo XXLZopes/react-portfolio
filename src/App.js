@@ -47,7 +47,11 @@ function App() {
       image = { image }
       setImage = { setImage }
       ></About>
-      {!contactSelected ? <Portfolio currentCategory = {currentCategory}></Portfolio> : window.open('mailto:aidan1meyer1@gmail.com')}
+      {contactSelected ? 
+      window.open('mailto:aidan1meyer1@gmail.com')
+      && console.log("Check out my github! https://github.com/XXLZopes")
+      : ""}
+      {!contactSelected ? <Portfolio currentCategory = {currentCategory}></Portfolio> : <Portfolio currentCategory = ""></Portfolio>}
       {resumeSelected ? <Resume></Resume> : ''}
       {/* <Portfolio currentCategory = {currentCategory}></Portfolio> */}
     </div>

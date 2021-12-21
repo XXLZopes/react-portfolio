@@ -7,32 +7,56 @@ const ProjectList = ({ category }) => {
         {
             name: 'Portfolio',
             category: 'react',
-            describe: 'Aidan built this website using react.js!',
+            describe: 'This portfolio was built using React.js',
+            // link: ''
+        },
+        {
+            name: 'coming soon 0',
+            category: 'react',
+            describe: '',
+            // link: ''
+        },
+        {
+            name: 'coming soon 1',
+            category: 'react',
+            describe: '',
             // link: ''
         },
        {
            name: 'Run Buddy',
            category: 'front-end',
-           describe: 'Aidan Meyer\'s first project at the UCLA boot camp',
+           describe: 'Run Buddy was built as practice for a mock company that helped trainers connect with joggers',
            link: 'https://xxlzopes.github.io/run-buddy/'
        },
        {
         name: 'Covid-19 Tracker',
         category: 'front-end',
-        describe: 'Aidan\'s first team project at the UCLA boot camp',
+        describe: 'This project works with the Google map API and CSC\'s API to track Covid Cases in the US',
         link: 'https://aidanguarniere.github.io/covid-19-tracker/'
         },
         {
-            name: 'coming soon..',
+            name: 'coming soon 2',
             category: 'front-end',
-            describe: 'What is next?',
+            describe: '',
             // link: ''
         },
         {
             name: 'Goals Social',
             category: 'full-stack',
-            describe: 'asdlmsklasdasdmkjsfdmkjdk',
+            describe: 'This is a full stack social medea that uses MySQL and Sequelize to store user data and host the server',
             link: 'https://goals-social-network.herokuapp.com/'
+        },
+        {
+            name: 'coming soon 3',
+            category: 'full-stack',
+            describe: '',
+            // link: ''
+        },
+        {
+            name: 'coming soon 4',
+            category: 'full-stack',
+            describe: '',
+            // link: ''
         }
     ]);
 
@@ -53,6 +77,7 @@ const ProjectList = ({ category }) => {
       
             <div className="img-container grid-template-columns">
                 {currentProjects.map((project, i) => (
+
                     <a
                     href={project.link}
                     key={project.name}
@@ -65,9 +90,12 @@ const ProjectList = ({ category }) => {
                             key={project.name}
                             className="pl-img"
                         />
+                        <p className="describe" style={{transform: `translateY(${translate}px)`, color: "ivory"}}>{project.describe}</p>
+                        
                     </a>
+
                 ))}
-                    
+                
             </div>
     );
 };

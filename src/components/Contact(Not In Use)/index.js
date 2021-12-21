@@ -18,7 +18,7 @@ function handleChange(e) {
             }
             if (e.target.name === 'email') {
                 const isValid = validateEmail(e.target.value);
-                console.log(isValid);
+                // console.log(isValid);
                 //isValid conditional statement
                 if (!isValid) {
                     setErrorMessage('Please enter a valid email address.');
