@@ -38,7 +38,7 @@ const ProjectList = ({ category }) => {
             name: 'Snake Game',
             category: 'front-end',
             describe: 'A re-creation of the snake game that utilizes the CSS grid',
-            link: ''
+            link: 'https://xxlzopes.github.io/games/'
         },
         {
             name: 'Goals Social',
