@@ -35,10 +35,10 @@ const ProjectList = ({ category }) => {
         link: 'https://aidanguarniere.github.io/covid-19-tracker/'
         },
         {
-            name: 'coming soon 2',
+            name: 'Snake Game',
             category: 'front-end',
-            describe: '',
-            // link: ''
+            describe: 'A re-creation of the snake game that utilizes the CSS grid',
+            link: ''
         },
         {
             name: 'Goals Social',
