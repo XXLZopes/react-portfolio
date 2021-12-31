@@ -57,7 +57,7 @@ return(
                         setContactSelected(false)
                         setResumeSelected(true)
                         setTimeout(() => {
-                            window.scrollBy({ top: scrollFunction(1258), left: 0, behavior: 'smooth' });
+                            window.scrollBy({ top: scrollFunction(1320), left: 0, behavior: 'smooth' });
                         }, 50);
                     }
                     }
@@ -77,7 +77,7 @@ return(
                             setResumeSelected(false)
                             // console.log(category)
                             setTimeout(() => {
-                                window.scrollBy({ top: scrollFunction(455), left: 0, behavior: 'smooth' });
+                                window.scrollBy({ top: scrollFunction(600), left: 0, behavior: 'smooth' });
                             }, 0);
                             
                         }}
